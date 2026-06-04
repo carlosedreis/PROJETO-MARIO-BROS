@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <title>Serviços Disponiveis</title>
+</head>
+
+<body>
+
+    <div class="tabela-servicos">
+        <h1>Tabela de Valores:</h1>
+        <p> 🔧 <a onclick="mostrarForm()">- Desentupimento de tubulações - R$ 120,00</a></p>
+        <p> 💧 <a onclick="mostrarForm()">- Reparo de vazamentos - R$ 50,00 </a></p>
+        <p> 🚰 <a onclick="mostrarForm()">- Tubulação furada/estourada - R$ 80,00</a></p>
+        <p> 📍 <a onclick="mostrarForm()">- Avaliação Técnica no endereço - R$ 70,00 </a></p>
+        <a class="voltar-tela-inicial" href="./index.html">Voltar à pagina principal</a>
+    </div>
+
+    <div class="caixa-video">
+        <video src="./assets/video.mp4" autoplay loop muted></video>
+        <div class="mascara-video"></div>
+    </div>
+
+    <form class="formulario" action="https://formcarry.com/s/XbRGnwoJPmu" method="POST" enctype="multipart/form-data">
+        <input placeholder="Seu nome" type="text" name="Nome">
+        <input placeholder="Seu email" type="text" name="Email">
+        <input placeholder="Seu numero de celular com DDD" type="number" name="Celular">
+        <textarea placeholder="Descreva seu problema aqui..." name="Problema"></textarea>
+        <button type="submit">Enviar meu pedido</button>
+    </form>
+
+    <div class="mascara-form" onclick="esconderForm()"></div>
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
